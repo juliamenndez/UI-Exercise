@@ -1,0 +1,105 @@
+header {
+	.top-header {
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+		padding: 20px 0;
+
+
+		.container {
+			display: grid;
+			grid-template-columns: 120px 1fr;	
+			justify-items: end;
+			align-items:center;
+
+			padding: 0 15px;
+			box-sizing: border-box;
+
+			#logo {
+				img {
+					max-width: 100%;
+				}
+			}
+
+			#profile {
+				height: 45px;
+
+				img {
+					max-width: 45px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	.bottom-header {
+		box-shadow: inset 1px 4px 9px -6px;
+		background-color: $primary;
+
+		.container {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-items: center;	
+
+			margin: 0 auto;
+			padding-top: 20px;
+			
+			a {
+				padding-bottom: 10px; 
+
+				font-weight: 300;
+				color: #eee;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 1.21px;
+
+				transition: all .2s ease-out;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: #fff;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 480px) {
+	header {
+		.top-header {
+			padding: 45px 0;
+
+			.container {
+				grid-template-columns: 180px 1fr;
+
+				#profile {
+					height: 55px;
+
+					img {
+						max-width: 55px;
+					}
+				}
+			}
+		}
+
+		.bottom-header .container {
+			grid-template-columns: repeat(4,1fr);
+
+			padding-top: 70px;
+
+			a {
+				padding-bottom: 20px; 
+				font-size: 20px;
+				border-bottom: 6px solid $primary;
+
+				&:hover,
+				&:focus,
+				&:active {
+					border-bottom-color: #fff;
+
+				}
+			}
+		}
+	}
+}
