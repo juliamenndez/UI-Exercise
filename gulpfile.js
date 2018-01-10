@@ -79,6 +79,13 @@ gulp.task('scripts-deploy', function() {
                 .pipe(gulp.dest('dist/scripts'));
 });
 
+//including vendor JS
+gulp.task('vendor-scripts', function(){
+    return gulp.src(['app/vendor/**/*.min.js'])
+           .pipe(gulp.dest('dist/vendor/'));
+
+});
+
 //compiling our SCSS files
 gulp.task('styles', function() {
     //the initializer / master SCSS file, which will just be a file that imports everything
@@ -135,6 +142,13 @@ gulp.task('styles-deploy', function() {
                 .pipe(minifyCSS())
                 //where to save our final, compressed css file
                 .pipe(gulp.dest('dist/styles'));
+});
+
+//including vendor CSS
+gulp.task('vendor-styles', function(){
+    return gulp.src(['app/vendor/**/*.min.css'])
+           .pipe(gulp.dest('dist/vendor/'));
+
 });
 
 //basically just keeping an eye on all HTML files
@@ -198,7 +212,7 @@ gulp.task('scaffold', function() {
 //  startup the web server,
 //  start up browserSync
 //  compress all scripts and SCSS files
-gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
+gulp.task('default', ['browserSync', 'scripts', 'styles','vendor-scripts','vendor-styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
     gulp.watch('app/scripts/src/**', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);

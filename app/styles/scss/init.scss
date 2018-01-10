@@ -5,6 +5,7 @@
 @import 'config/_settings';
 @import 'config/_mixins';
 @import 'config/_variables';
+@import 'config/_forms';
 
 //frameworks
 
@@ -15,3 +16,4 @@
 @import 'layout/_header';
 
 //pages
+@import 'pages/_contacts.scss';

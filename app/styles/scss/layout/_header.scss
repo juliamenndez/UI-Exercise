@@ -55,7 +55,8 @@ header {
 
 				&:hover,
 				&:focus,
-				&:active {
+				&:active,
+				&.active {
 					color: #fff;
 					font-weight: 500;
 				}
@@ -95,7 +96,8 @@ header {
 
 				&:hover,
 				&:focus,
-				&:active {
+				&:active,
+				&.active {
 					border-bottom-color: #fff;
 
 				}

@@ -1,0 +1,60 @@
+button {
+	height: $form-elements-height;
+	border: 0 none;
+	
+	font-family: Montserrat;
+	font-size: 18px;
+	color: $dark;
+	text-transform: uppercase;
+	letter-spacing: 0.79px;	
+
+	transition: all .2s ease-out;
+
+	svg {
+		width: 13px;
+		
+		path {
+			stroke-width: 6px;
+			transition: all .2s ease-out;
+		}
+	}
+
+	&:hover, 
+	&:focus, 
+	&:active {
+		svg path {
+			stroke: #fff;
+		}
+	}
+}
+
+.primary-btn {
+	background-color: $yellow;
+
+	&:hover, 
+	&:focus,
+	&:active {
+		background-color: $dark-grey;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+select {
+	appearance: none;
+
+	height: $form-elements-height;
+	padding-left: 20px;
+	
+	font-family: Fira Sans, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: $grey;
+
+	background-color: #fff;
+	border-color: $light-grey;
+	border-radius: 0;
+	background: #fff url('/images/arrow-icon.svg') no-repeat calc(100% - 15px) center;
+ 	background-size: 13px;
+	
+}
