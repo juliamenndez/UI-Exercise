@@ -2,10 +2,19 @@
 	width: 100%;
 }
 
+.container-wrapper {
+	width: 100%;
+}
+
 @media (min-width: 769px) {
 	.container {
-		width: 85%;
 		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.container-wrapper {
+		width: 95%;
+		max-width: 1040px;
 		margin: 0 auto;
 	}
 }

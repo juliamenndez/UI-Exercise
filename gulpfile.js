@@ -18,12 +18,15 @@ autoprefixer = require('gulp-autoprefixer');
 gulpSequence = require('gulp-sequence').use(gulp);
 shell       = require('gulp-shell');
 plumber     = require('gulp-plumber');
+php = require('gulp-connect-php');
 
-gulp.task('browserSync', function() {
+gulp.task('php', function() {
+    php.server({ base: 'app', port: 3000, keepalive: true});
+});
+
+gulp.task('browserSync',['php'], function() {
     browserSync({
-        server: {
-            baseDir: "app/"
-        },
+        proxy: '127.0.0.1:3000',
         options: {
             reloadDelay: 250
         },
@@ -151,10 +154,10 @@ gulp.task('vendor-styles', function(){
 
 });
 
-//basically just keeping an eye on all HTML files
-gulp.task('html', function() {
+//basically just keeping an eye on all code files
+gulp.task('code', function() {
     //watch any and all HTML files and refresh when something changes
-    return gulp.src('app/*.html')
+    return gulp.src(['app/templates/*.php','app/*.php'])
         .pipe(plumber())
         .pipe(browserSync.reload({stream: true}))
         //catch errors
@@ -217,7 +220,7 @@ gulp.task('default', ['browserSync', 'scripts', 'styles','vendor-scripts','vendo
     gulp.watch('app/scripts/src/**', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);
     gulp.watch('app/images/**', ['images']);
-    gulp.watch('app/*.html', ['html']);
+    gulp.watch(['app/templates/*.php','app/*.php'], ['code']);
 });
 
 //this is our deployment task, it will set everything for deployment-ready files

@@ -2,9 +2,9 @@
 @import 'general/_reset';
 
 //misc settings
+@import 'config/_variables';
 @import 'config/_settings';
 @import 'config/_mixins';
-@import 'config/_variables';
 @import 'config/_forms';
 
 //frameworks
@@ -14,6 +14,7 @@
 
 //layouts
 @import 'layout/_header';
+@import 'layout/_footer';
 
 //pages
 @import 'pages/_contacts.scss';

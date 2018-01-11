@@ -1,0 +1,5 @@
+[
+  {"name":"id","title":"ID","breakpoints":"","type":"number","style":{"width":80,"maxWidth":80},"visible":false},
+  {"name":"agency","title":"Agency","style":{"width":300,"maxWidth":300}},
+  {"name":"states","title":"Operating states"}
+]

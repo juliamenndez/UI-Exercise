@@ -1,5 +1,20 @@
-// Add your settings here
+// General styles and classes
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.15rem;
+	color: $dark-grey;
+}
+
+h1 {
+	font-size: 2rem;
+	color: $dark;
+}
+
+.light-text {
+	font-weight: 300;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1.21px;
 }
