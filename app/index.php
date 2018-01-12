@@ -118,15 +118,42 @@
 				        	</a>
 
 				        	<div id="states" class="items">
-				        		<div class="item"><span class="arrow"></span>Arizona</div>
-				        		<div class="item"><span class="arrow"></span>Delaware</div>
 				        		<div class="item">
-				        			<span class="arrow"></span>
+				        			<svg class="arrow" width="54" height="28" viewBox="0 0 54 28" xmlns="http://www.w3.org/2000/svg"><path d="M27 28L1 1h52z" fill="#5E5E5E" fill-rule="evenodd"/></svg>Arizona
+				        		</div>
+				        		
+				        		<div class="item">
+				        			<svg class="arrow" width="54" height="28" viewBox="0 0 54 28" xmlns="http://www.w3.org/2000/svg"><path d="M27 28L1 1h52z" fill="#5E5E5E" fill-rule="evenodd"/></svg>Delaware
+				        		</div>
+				        		
+				        		<div class="item">
+				        			<svg class="arrow" width="54" height="28" viewBox="0 0 54 28" xmlns="http://www.w3.org/2000/svg"><path d="M27 28L1 1h52z" fill="#5E5E5E" fill-rule="evenodd"/></svg>
 				        			Missouri
 				        			<div class="subitems">
-				        				<div class="subitem">Policy number one</div>
-				        				<div class="subitem">Policy number two</div>
-				        				<div class="subitem">Policy number three</div>
+				        				<div class="subitem">
+				        					Policy number one
+				        					<span class="item-links">
+				        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+				        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><path d="M13.587 18.2C6.844 18.2 1 9.6 1 9.6S6.395 1 13.587 1c7.193 0 12.138 8.6 12.138 8.6s-5.395 8.6-12.138 8.6zm-.224-4.837a3.763 3.763 0 1 0 0-7.525 3.763 3.763 0 0 0 0 7.525z" fill="#095459" fill-rule="evenodd"/></svg></a>
+				        					</span>
+				        				</div>
+				        				
+				        				<div class="subitem">
+				        					Policy number two
+				        					<span class="item-links">
+					        					<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+					        					<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><path d="M13.587 18.2C6.844 18.2 1 9.6 1 9.6S6.395 1 13.587 1c7.193 0 12.138 8.6 12.138 8.6s-5.395 8.6-12.138 8.6zm-.224-4.837a3.763 3.763 0 1 0 0-7.525 3.763 3.763 0 0 0 0 7.525z" fill="#095459" fill-rule="evenodd"/></svg></a>
+					        				</span>
+				        				</div>
+				        				
+				        				<div class="subitem">
+				        					Policy number three
+				        					<span class="item-links">	
+					        					<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+					        					<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><path d="M13.587 18.2C6.844 18.2 1 9.6 1 9.6S6.395 1 13.587 1c7.193 0 12.138 8.6 12.138 8.6s-5.395 8.6-12.138 8.6zm-.224-4.837a3.763 3.763 0 1 0 0-7.525 3.763 3.763 0 0 0 0 7.525z" fill="#095459" fill-rule="evenodd"/></svg></a>
+					        				</span>
+				        				</div>
+				        				
 				        				<a href="#" class="edit-link">
 							        		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><path d="M14 3v21m10.5-10.5h-21" fill="none" stroke="#303030" stroke-width="4" stroke-linecap="square"/></svg>Add policy
 							        	</a>
@@ -137,8 +164,37 @@
 				        
 				        <section id="policies-content" class="content-wrapper">
 				        	<a href="#" class="edit-link">
-				        		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><path d="M14 3v21m10.5-10.5h-21" fill="none" stroke="#303030" stroke-width="4" stroke-linecap="square"/></svg>Add policy
-				        	</a>
+				        		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27"><path d="M14 3v21m10.5-10.5h-21" fill="none" stroke="#303030" stroke-width="4" stroke-linecap="square"/></svg>Add policy</a>
+
+				        	<div id="policies" class="items">
+				        		<div class="item">
+				        			Homeowners Policies
+				        			<span class="item-links">
+		        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+		        					</span>
+				        		</div>
+				        		
+				        		<div class="item">
+				        			Farmowners Policies
+				        			<span class="item-links">
+		        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+		        					</span>
+				        		</div>
+				        		
+				        		<div class="item">
+				           			Commercial Policies
+				           			<span class="item-links">
+		        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+		        					</span>
+				        		</div>
+
+				        		<div class="item">
+				           			Liability Protection Policies
+				           			<span class="item-links">
+		        						<a href="#"><svg width="27" height="19" viewBox="0 0 27 19" xmlns="http://www.w3.org/2000/svg"><g stroke="#FE7B45" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M19.163 3.837L7.837 15.163M19.163 15.163L7.837 3.837"/></g></svg></a>
+		        					</span>
+				        		</div>
+				        	</div>
 				        </section>
 				    </section>                   
 	            </div>
